@@ -1,10 +1,16 @@
+
+########################
+# install dependencies #
+########################
+
+sudo sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
+sudo apt update
+sudo apt install -y build-essential autoconf libtool git-core
+
 ###################################
 # compile the codecs and software #
 ###################################
 
-sudo sed -Ei 's/^# deb-src /deb-src /' /etc/apt/sources.list
-sudo apt update
-sudo apt install -y build-essential autoconf libtool git-core build-dep imagemagick libmagickcore-dev libde265 libheif
 cd /usr/src/ 
 sudo git clone https://github.com/strukturag/libde265.git  
 sudo git clone https://github.com/strukturag/libheif.git 
