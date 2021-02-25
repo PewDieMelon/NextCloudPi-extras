@@ -1,5 +1,9 @@
 # NextCloudPi-extras
-My additional extras for a clean NextCloudPi installation by ownyourbits.com. 
+My extra steps to add on a clean NextCloudPi installation.
 
-Currently you can find:
-- a setup script to enable HEIC thumbnails on the server side.
+Currently the script contains 3 parts:
+- correcting drive mounting
+- installing and activating ClamAV
+- installing Imagemagick for HEIF thumbnail support
+
+Visually step 1 and 2 are not seperated within the script because man, protect your files!
