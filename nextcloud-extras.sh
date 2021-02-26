@@ -23,7 +23,7 @@ sudo mkdir /media/myCloudDrive/ncdatabase
 # Now install antivirus for files from the NC app store https://nextcloudpi.local/index.php/settings/apps/security/files_antivirus
 
 sudo apt install -y clamav clamav-daemon
-sudo systemctl stop clamd
+sudo systemctl stop clamav-daemon
 sudo systemctl stop clamav-freshclam
 sudo freshclam
 sudo systemctl start clamav-freshclam
@@ -67,6 +67,9 @@ sudo ./configure --with-heic=yes
 sudo make  
 sudo make install  
 sudo ldconfig
+cd /usr/src/
+sudo rm -f ImageMagick.tar.gz
+
 
 # activate PHP plugin #
 
