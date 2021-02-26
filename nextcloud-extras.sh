@@ -6,7 +6,7 @@
 
 # First make sure everything is up to date #
 
-sudo apt update && sudo apt full-upgrade -y && sudo ncp-update
+sudo apt update && sudo apt full-upgrade -y && sudo ncp-update && sudo apt install php-imagick
 
 # Now the drive needs to be set up correctly #
 
